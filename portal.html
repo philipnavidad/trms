@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>Native Portals</title>
+	<script src="https://aframe.io/releases/0.3.0/aframe.js"></script>
+	<script src="../../dist/altspace.js"></script>
+</head>
+<body>
+<a-scene altspace="fullspace: true">
+		<a-entity position="-36 -5.5 -7" n-portal="targetSpace: trms-studio"></a-entity>
+		<a-entity id="ice-rink" position="-50 -3.6 0" rotation="0 0 0"></a-entity>
+	<a-entity position="-7 0 45" n-portal="targetEntity: #ice-rink"></a-entity>
+</a-scene>
+</body>
+</html>
